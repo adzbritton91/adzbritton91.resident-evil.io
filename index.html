@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--This is the navigation for the site-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo" src="images/Umbrella-Emblem.png"/></a>
@@ -57,43 +58,134 @@
             </div>
         </div>
     </header>
+    <!--This is thhe main section of the website-->
     <main class="services" id="solutions">
         <h3 class="text-center mb-5">Solutions</h3>
+        <!--This is the card section, each one then has a modal associated-->
         <div class="container">
             <div class="row justify-content-center g-4">
+                <!--Main Card-->
                 <div class="tvirus card col-12 col-sm-6 col-md-5 m-3">
                     <div class="card-body">
                         <h3 class="card-title">T-Virus</h3>
                         <p>The T-Virus is Umbrella Corporation’s most ambitious breakthrough in genetic engineering, designed to enhance cellular regeneration and unlock untapped biological potential. While it offers unprecedented advancements in medicine and human performance, it also underscores the fine line between innovation and control—one Umbrella is committed to mastering.</p>
-                        <a href="#" class="btn btn-danger">Learn More</a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tvirus">Learn More</button>
+                    </div>
+                    <!--Modal-->
+                    <div class="modal fade" id="tvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">T-Virus</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The T-Virus is Umbrella Corporation’s most ambitious breakthrough in genetic engineering, designed to enhance cellular regeneration and unlock untapped biological potential. Originally developed to revolutionize medicine and human performance, the virus can accelerate healing, strengthen immunity, and even alter genetic traits. However, its effects are unpredictable and often catastrophic: subjects may experience uncontrollable mutations, heightened aggression, and transformation into grotesque forms. While offering unprecedented scientific possibilities, the T-Virus also highlights the ethical and existential risks of playing with the very building blocks of life—risks that Umbrella relentlessly seeks to manage, contain, and exploit for its own ends.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!--Main Card-->
                 <div class="gvirus card col-12 col-sm-6 col-md-5 m-3">
                     <div class="card-body">
                         <h3 class="card-title">G-Virus</h3>
                         <p>The G-Virus pushes the limits of genetic evolution, creating rapid cellular mutation and extraordinary adaptability. Its potential for scientific advancement is matched only by the intensity of its power, making it one of Umbrella’s most formidable innovations.</p>
-                        <a href="#" class="btn btn-danger">Learn More</a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#gvirus">Learn More</button>
+                    </div>
+                    <!--Modal-->
+                    <div class="modal fade" id="gvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">G-Virus</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The G-Virus represents the pinnacle of Umbrella Corporation’s experimentation in genetic evolution. Unlike the T-Virus, it does not just enhance cells—it rewrites them entirely, driving rapid and often uncontrollable mutations. Subjects gain extraordinary adaptability, accelerated healing, and sometimes new physical abilities, but these changes come at a terrifying cost: mental instability, aggressive instincts, and grotesque, unpredictable transformations. The G-Virus exemplifies the extreme edge of biotechnological innovation, where the promise of evolution collides with the threat of chaos, making it one of Umbrella’s most dangerous and awe-inspiring creations.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!--Main Card-->
                 <div class="cvirus card col-12 col-sm-6 col-md-5 m-3">
                     <div class="card-body">
                         <h3 class="card-title">C-Virus</h3>
                         <p>The C-Virus represents the next generation of bioweapon research, combining enhanced infectivity with controlled mutation. It showcases Umbrella’s precision in genetic engineering, opening doors to revolutionary medical applications.</p>
-                        <a href="#" class="btn btn-danger">Learn More</a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cvirus">Learn More</button>
+                    </div>
+                    <!--Modal-->
+                    <div class="modal fade" id="cvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">C-Virus</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The C-Virus represents the next generation of Umbrella Corporation’s bioweapon research, merging enhanced infectivity with precise control over mutation. Unlike its predecessors, the C-Virus is engineered to spread efficiently while maintaining targeted genetic effects, giving Umbrella unprecedented mastery over both its subjects and outcomes. Its innovations offer the potential for revolutionary medical treatments, such as accelerated regeneration and adaptive immunity, but the line between cure and catastrophe is razor-thin. Subjects exposed to the virus may experience rapid mutations, unpredictable physical transformations, and heightened aggression, reflecting the inherent dangers of manipulating life at such a fundamental level. The C-Virus embodies Umbrella’s relentless pursuit of perfection, where scientific ambition walks hand in hand with ethical peril.</p>                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!--Main Card-->
                 <div class="tvirus card col-12 col-sm-6 col-md-5 m-3">
                     <div class="card-body">
                         <h3 class="card-title">T-Veronica virus</h3>
                         <p>The T-Veronica Virus is a masterclass in viral innovation, capable of triggering controlled cellular transformation and rapid regeneration. Umbrella continues to explore its potential for scientific breakthroughs with exacting oversight.</p>
-                        <a href="#" class="btn btn-danger">Learn More</a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#t-veronica">Learn More</button>
+                    </div>
+                    <!--Modal-->
+                    <div class="modal fade" id="t-veronica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">T-Veronica Virus</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The T-Veronica Virus represents Umbrella Corporation’s most refined approach to viral engineering. Designed to trigger controlled cellular transformation, it enables rapid regeneration while preserving cognitive function—unlike the chaotic effects seen in earlier viruses. The virus can restructure tissue, enhance resilience, and even adapt to environmental stresses, offering a glimpse into the next frontier of genetic science. However, its power comes with inherent risks: overexposure can lead to unforeseen mutations, psychological instability, and extreme physiological changes. The T-Veronica Virus exemplifies Umbrella’s commitment to pushing the boundaries of life itself, combining scientific precision with the ongoing moral and ethical dilemmas of manipulating biology at its core.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!--Main Card-->
                 <div class="nemesis card col-12 col-sm-6 col-md-5 m-3">
                     <div class="card-body">
                         <h3 class="card-title">Nemesis / NE-T Virus</h3>
                         <p>The NE-T Virus, engineered for tactical superiority, heightens physical strength, resilience, and regeneration. It embodies Umbrella’s pursuit of peak performance under extreme conditions.</p>
-                        <a href="#" class="btn btn-danger">Learn More</a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#nemesis">Learn More</button>
+                    </div>
+                    <!--Modal-->
+                    <div class="modal fade" id="nemesis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Nemesis / NE-T Virus</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The NE-T Virus is Umbrella Corporation’s latest tactical bioweapon, designed to push human performance to its absolute limits. It enhances physical strength, accelerates regeneration, and fortifies resilience, making subjects capable of surviving extreme conditions that would overwhelm ordinary humans. While its precision engineering allows for controlled activation and targeted effects, the virus is far from risk-free: uncontrolled exposure can trigger unpredictable mutations, aggressive behavior, and severe physiological strain. The NE-T Virus represents Umbrella’s relentless quest to combine scientific innovation with battlefield superiority, blurring the line between human potential and engineered monstrosity.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,6 +200,7 @@
                     <img src="images/about.avif" class="img-fluid rounded" alt="Umbrella Research Lab">
                 </div>
                 <div class="col-md-6">
+                    <p>Umbrella Corporation is a global leader in biotechnology, pushing the limits of genetic research and viral innovation. With groundbreaking technologies and a focus on precision and control, Umbrella continues to shape the future of science, medicine, and human potential.</p>
                     <ul>
                         <li>Innovative genetic research</li>
                         <li>Global operations</li>
