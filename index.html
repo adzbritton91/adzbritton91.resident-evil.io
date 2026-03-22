@@ -6,245 +6,385 @@
     <title>Umbrella Corporation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <!--This is the navigation for the site-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="images/Umbrella-Emblem.png"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#solutions">Solutions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#leadership">Leadership</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="container py-5">
-        <div class="row align-items-center g-4">
-            <!-- Text column -->
-            <div class="col-12 col-md-5 text-center text-md-start slogan">
-            <h1 class="display-5">Welcome to Umbrella Corporation</h1>
-            <p class="lead">Our Business Is Life Itself</p>
-            </div>
-
-            <!-- Video column -->
-            <div class="col-12 col-md-7 d-flex justify-content-center">
-            <div class="ratio ratio-16x9 w-100" style="max-width: 750px;">
-                <iframe 
-                src="https://www.youtube.com/embed/-5EPfiXZqwk?autoplay=1&mute=1" 
-                title="Umbrella Corp Video" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-                </iframe>
-            </div>
-            </div>
-        </div>
-    </header>
-    <!--This is thhe main section of the website-->
-    <main class="services" id="solutions">
-        <h3 class="text-center mb-5">Solutions</h3>
-        <!--This is the card section, each one then has a modal associated-->
-        <div class="container">
-            <div class="row justify-content-center g-4">
-                <!--Main Card-->
-                <div class="tvirus card col-12 col-sm-6 col-md-5 m-3">
-                    <div class="card-body">
-                        <h3 class="card-title">T-Virus</h3>
-                        <p>The T-Virus is Umbrella Corporation’s most ambitious breakthrough in genetic engineering, designed to enhance cellular regeneration and unlock untapped biological potential. While it offers unprecedented advancements in medicine and human performance, it also underscores the fine line between innovation and control—one Umbrella is committed to mastering.</p>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tvirus">Learn More</button>
-                    </div>
-                    <!--Modal-->
-                    <div class="modal fade" id="tvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">T-Virus</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>The T-Virus is Umbrella Corporation’s most ambitious breakthrough in genetic engineering, designed to enhance cellular regeneration and unlock untapped biological potential. Originally developed to revolutionize medicine and human performance, the virus can accelerate healing, strengthen immunity, and even alter genetic traits. However, its effects are unpredictable and often catastrophic: subjects may experience uncontrollable mutations, heightened aggression, and transformation into grotesque forms. While offering unprecedented scientific possibilities, the T-Virus also highlights the ethical and existential risks of playing with the very building blocks of life—risks that Umbrella relentlessly seeks to manage, contain, and exploit for its own ends.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Main Card-->
-                <div class="gvirus card col-12 col-sm-6 col-md-5 m-3">
-                    <div class="card-body">
-                        <h3 class="card-title">G-Virus</h3>
-                        <p>The G-Virus pushes the limits of genetic evolution, creating rapid cellular mutation and extraordinary adaptability. Its potential for scientific advancement is matched only by the intensity of its power, making it one of Umbrella’s most formidable innovations.</p>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#gvirus">Learn More</button>
-                    </div>
-                    <!--Modal-->
-                    <div class="modal fade" id="gvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">G-Virus</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>The G-Virus represents the pinnacle of Umbrella Corporation’s experimentation in genetic evolution. Unlike the T-Virus, it does not just enhance cells—it rewrites them entirely, driving rapid and often uncontrollable mutations. Subjects gain extraordinary adaptability, accelerated healing, and sometimes new physical abilities, but these changes come at a terrifying cost: mental instability, aggressive instincts, and grotesque, unpredictable transformations. The G-Virus exemplifies the extreme edge of biotechnological innovation, where the promise of evolution collides with the threat of chaos, making it one of Umbrella’s most dangerous and awe-inspiring creations.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Main Card-->
-                <div class="cvirus card col-12 col-sm-6 col-md-5 m-3">
-                    <div class="card-body">
-                        <h3 class="card-title">C-Virus</h3>
-                        <p>The C-Virus represents the next generation of bioweapon research, combining enhanced infectivity with controlled mutation. It showcases Umbrella’s precision in genetic engineering, opening doors to revolutionary medical applications.</p>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cvirus">Learn More</button>
-                    </div>
-                    <!--Modal-->
-                    <div class="modal fade" id="cvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">C-Virus</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>The C-Virus represents the next generation of Umbrella Corporation’s bioweapon research, merging enhanced infectivity with precise control over mutation. Unlike its predecessors, the C-Virus is engineered to spread efficiently while maintaining targeted genetic effects, giving Umbrella unprecedented mastery over both its subjects and outcomes. Its innovations offer the potential for revolutionary medical treatments, such as accelerated regeneration and adaptive immunity, but the line between cure and catastrophe is razor-thin. Subjects exposed to the virus may experience rapid mutations, unpredictable physical transformations, and heightened aggression, reflecting the inherent dangers of manipulating life at such a fundamental level. The C-Virus embodies Umbrella’s relentless pursuit of perfection, where scientific ambition walks hand in hand with ethical peril.</p>                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Main Card-->
-                <div class="tvirus card col-12 col-sm-6 col-md-5 m-3">
-                    <div class="card-body">
-                        <h3 class="card-title">T-Veronica virus</h3>
-                        <p>The T-Veronica Virus is a masterclass in viral innovation, capable of triggering controlled cellular transformation and rapid regeneration. Umbrella continues to explore its potential for scientific breakthroughs with exacting oversight.</p>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#t-veronica">Learn More</button>
-                    </div>
-                    <!--Modal-->
-                    <div class="modal fade" id="t-veronica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">T-Veronica Virus</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>The T-Veronica Virus represents Umbrella Corporation’s most refined approach to viral engineering. Designed to trigger controlled cellular transformation, it enables rapid regeneration while preserving cognitive function—unlike the chaotic effects seen in earlier viruses. The virus can restructure tissue, enhance resilience, and even adapt to environmental stresses, offering a glimpse into the next frontier of genetic science. However, its power comes with inherent risks: overexposure can lead to unforeseen mutations, psychological instability, and extreme physiological changes. The T-Veronica Virus exemplifies Umbrella’s commitment to pushing the boundaries of life itself, combining scientific precision with the ongoing moral and ethical dilemmas of manipulating biology at its core.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Main Card-->
-                <div class="nemesis card col-12 col-sm-6 col-md-5 m-3">
-                    <div class="card-body">
-                        <h3 class="card-title">Nemesis / NE-T Virus</h3>
-                        <p>The NE-T Virus, engineered for tactical superiority, heightens physical strength, resilience, and regeneration. It embodies Umbrella’s pursuit of peak performance under extreme conditions.</p>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#nemesis">Learn More</button>
-                    </div>
-                    <!--Modal-->
-                    <div class="modal fade" id="nemesis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Nemesis / NE-T Virus</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>The NE-T Virus is Umbrella Corporation’s latest tactical bioweapon, designed to push human performance to its absolute limits. It enhances physical strength, accelerates regeneration, and fortifies resilience, making subjects capable of surviving extreme conditions that would overwhelm ordinary humans. While its precision engineering allows for controlled activation and targeted effects, the virus is far from risk-free: uncontrolled exposure can trigger unpredictable mutations, aggressive behavior, and severe physiological strain. The NE-T Virus represents Umbrella’s relentless quest to combine scientific innovation with battlefield superiority, blurring the line between human potential and engineered monstrosity.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <section class="about py-5 bg-light" id="about">
-        <div class="container">
-            <h2>About Umbrella Corporation</h2>
-            <p>Founded in 1968, Umbrella Corporation has led the world in biotechnological research...</p>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <img src="images/about.avif" class="img-fluid rounded" alt="Umbrella Research Lab">
-                </div>
-                <div class="col-md-6">
-                    <p>Umbrella Corporation is a global leader in biotechnology, pushing the limits of genetic research and viral innovation. With groundbreaking technologies and a focus on precision and control, Umbrella continues to shape the future of science, medicine, and human potential.</p>
-                    <ul>
-                        <li>Innovative genetic research</li>
-                        <li>Global operations</li>
-                        <li>Commitment to advancement</li>
+    <!--This is the umbrella content-->
+    <section id="umbrellaContent">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="images/Umbrella-Emblem.png"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#solutions">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#leadership">Leadership</a>
+                        </li>
                     </ul>
-                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="about py-5" id="leadership">
-        <div class="container">
-            <h3 class="text-center mb-5">Leadership</h2>
-            <div class="row justify-content-center g-4">
-                <div class="tvirus card col-12 col-sm-6 col-md-3 m-3">
-                    <img src="images/oswell.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Oswell E. Spencer</h3>
-                        <p>Co-founder and primary visionary of Umbrella</p>
-                    </div>
-                </div>
-                <div class="gvirus card col-12 col-sm-6 col-md-3 m-3">
-                    <img src="images/edward.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Edward Ashford</h3>
-                        <p>Co-founder and scientific partner</p>
-                    </div>
-                </div>
-                <div class="cvirus card col-12 col-sm-6 col-md-3 m-3">
-                    <img src="images/james.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">James Marcus</h3>
-                        <p>Co-founder and chief scientist</p>
-                    </div>
                 </div>
             </div>
+        </nav>
+        <header class="container py-5">
+            <div class="row align-items-center g-4">
+                <!-- Text column -->
+                <div class="col-12 col-md-5 text-center text-md-start slogan">
+                <h1 class="display-5">Welcome to Umbrella Corporation</h1>
+                <p class="lead">Our Business Is Life Itself</p>
+                </div>
+
+                <!-- Video column -->
+                <div class="col-12 col-md-7 d-flex justify-content-center">
+                <div class="ratio ratio-16x9 w-100" style="max-width: 750px;">
+                    <iframe 
+                    src="https://www.youtube.com/embed/-5EPfiXZqwk?autoplay=1&mute=1" 
+                    title="Umbrella Corp Video" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                    </iframe>
+                </div>
+                </div>
+            </div>
+        </header>
+        <!--This is thhe main section of the website-->
+        <main class="services" id="solutions">
+            <h3 class="text-center mb-5">Solutions</h3>
+            <!--This is the card section, each one then has a modal associated-->
+            <div class="container">
+                <div class="row justify-content-center g-4">
+                    <!--Main Card-->
+                    <div class="tvirus card col-12 col-sm-6 col-md-5 m-3">
+                        <div class="card-body">
+                            <h3 class="card-title">T-Virus</h3>
+                            <p>The T-Virus is Umbrella Corporation’s most ambitious breakthrough in genetic engineering, designed to enhance cellular regeneration and unlock untapped biological potential. While it offers unprecedented advancements in medicine and human performance, it also underscores the fine line between innovation and control—one Umbrella is committed to mastering.</p>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tvirus">Learn More</button>
+                        </div>
+                        <!--Modal-->
+                        <div class="modal fade" id="tvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">T-Virus</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The T-Virus is Umbrella Corporation’s most ambitious breakthrough in genetic engineering, designed to enhance cellular regeneration and unlock untapped biological potential. Originally developed to revolutionize medicine and human performance, the virus can accelerate healing, strengthen immunity, and even alter genetic traits. However, its effects are unpredictable and often catastrophic: subjects may experience uncontrollable mutations, heightened aggression, and transformation into grotesque forms. While offering unprecedented scientific possibilities, the T-Virus also highlights the ethical and existential risks of playing with the very building blocks of life—risks that Umbrella relentlessly seeks to manage, contain, and exploit for its own ends.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Main Card-->
+                    <div class="gvirus card col-12 col-sm-6 col-md-5 m-3">
+                        <div class="card-body">
+                            <h3 class="card-title">G-Virus</h3>
+                            <p>The G-Virus pushes the limits of genetic evolution, creating rapid cellular mutation and extraordinary adaptability. Its potential for scientific advancement is matched only by the intensity of its power, making it one of Umbrella’s most formidable innovations.</p>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#gvirus">Learn More</button>
+                        </div>
+                        <!--Modal-->
+                        <div class="modal fade" id="gvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">G-Virus</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The G-Virus represents the pinnacle of Umbrella Corporation’s experimentation in genetic evolution. Unlike the T-Virus, it does not just enhance cells—it rewrites them entirely, driving rapid and often uncontrollable mutations. Subjects gain extraordinary adaptability, accelerated healing, and sometimes new physical abilities, but these changes come at a terrifying cost: mental instability, aggressive instincts, and grotesque, unpredictable transformations. The G-Virus exemplifies the extreme edge of biotechnological innovation, where the promise of evolution collides with the threat of chaos, making it one of Umbrella’s most dangerous and awe-inspiring creations.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Main Card-->
+                    <div class="cvirus card col-12 col-sm-6 col-md-5 m-3">
+                        <div class="card-body">
+                            <h3 class="card-title">C-Virus</h3>
+                            <p>The C-Virus represents the next generation of bioweapon research, combining enhanced infectivity with controlled mutation. It showcases Umbrella’s precision in genetic engineering, opening doors to revolutionary medical applications.</p>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cvirus">Learn More</button>
+                        </div>
+                        <!--Modal-->
+                        <div class="modal fade" id="cvirus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">C-Virus</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The C-Virus represents the next generation of Umbrella Corporation’s bioweapon research, merging enhanced infectivity with precise control over mutation. Unlike its predecessors, the C-Virus is engineered to spread efficiently while maintaining targeted genetic effects, giving Umbrella unprecedented mastery over both its subjects and outcomes. Its innovations offer the potential for revolutionary medical treatments, such as accelerated regeneration and adaptive immunity, but the line between cure and catastrophe is razor-thin. Subjects exposed to the virus may experience rapid mutations, unpredictable physical transformations, and heightened aggression, reflecting the inherent dangers of manipulating life at such a fundamental level. The C-Virus embodies Umbrella’s relentless pursuit of perfection, where scientific ambition walks hand in hand with ethical peril.</p>                            </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Main Card-->
+                    <div class="tvirus card col-12 col-sm-6 col-md-5 m-3">
+                        <div class="card-body">
+                            <h3 class="card-title">T-Veronica virus</h3>
+                            <p>The T-Veronica Virus is a masterclass in viral innovation, capable of triggering controlled cellular transformation and rapid regeneration. Umbrella continues to explore its potential for scientific breakthroughs with exacting oversight.</p>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#t-veronica">Learn More</button>
+                        </div>
+                        <!--Modal-->
+                        <div class="modal fade" id="t-veronica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">T-Veronica Virus</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The T-Veronica Virus represents Umbrella Corporation’s most refined approach to viral engineering. Designed to trigger controlled cellular transformation, it enables rapid regeneration while preserving cognitive function—unlike the chaotic effects seen in earlier viruses. The virus can restructure tissue, enhance resilience, and even adapt to environmental stresses, offering a glimpse into the next frontier of genetic science. However, its power comes with inherent risks: overexposure can lead to unforeseen mutations, psychological instability, and extreme physiological changes. The T-Veronica Virus exemplifies Umbrella’s commitment to pushing the boundaries of life itself, combining scientific precision with the ongoing moral and ethical dilemmas of manipulating biology at its core.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Main Card-->
+                    <div class="nemesis card col-12 col-sm-6 col-md-5 m-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Nemesis / NE-T Virus</h3>
+                            <p>The NE-T Virus, engineered for tactical superiority, heightens physical strength, resilience, and regeneration. It embodies Umbrella’s pursuit of peak performance under extreme conditions.</p>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#nemesis">Learn More</button>
+                        </div>
+                        <!--Modal-->
+                        <div class="modal fade" id="nemesis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Nemesis / NE-T Virus</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The NE-T Virus is Umbrella Corporation’s latest tactical bioweapon, designed to push human performance to its absolute limits. It enhances physical strength, accelerates regeneration, and fortifies resilience, making subjects capable of surviving extreme conditions that would overwhelm ordinary humans. While its precision engineering allows for controlled activation and targeted effects, the virus is far from risk-free: uncontrolled exposure can trigger unpredictable mutations, aggressive behavior, and severe physiological strain. The NE-T Virus represents Umbrella’s relentless quest to combine scientific innovation with battlefield superiority, blurring the line between human potential and engineered monstrosity.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="about py-5 bg-light" id="about">
+            <div class="container">
+                <h2>About Umbrella Corporation</h2>
+                <p>Founded in 1968, Umbrella Corporation has led the world in biotechnological research...</p>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <img src="images/about.avif" class="img-fluid rounded" alt="Umbrella Research Lab">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Umbrella Corporation is a global leader in biotechnology, pushing the limits of genetic research and viral innovation. With groundbreaking technologies and a focus on precision and control, Umbrella continues to shape the future of science, medicine, and human potential.</p>
+                        <ul>
+                            <li>Innovative genetic research</li>
+                            <li>Global operations</li>
+                            <li>Commitment to advancement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about py-5" id="leadership">
+            <div class="container">
+                <h3 class="text-center mb-5">Leadership</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="tvirus card col-12 col-sm-6 col-md-3 m-3">
+                        <img src="images/oswell.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Oswell E. Spencer</h3>
+                            <p>Co-founder and primary visionary of Umbrella</p>
+                        </div>
+                    </div>
+                    <div class="gvirus card col-12 col-sm-6 col-md-3 m-3">
+                        <img src="images/edward.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Edward Ashford</h3>
+                            <p>Co-founder and scientific partner</p>
+                        </div>
+                    </div>
+                    <div class="cvirus card col-12 col-sm-6 col-md-3 m-3">
+                        <img src="images/james.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">James Marcus</h3>
+                            <p>Co-founder and chief scientist</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <button type="button" class="btn btn-primary mx-auto flashing-btn" id="starsButton">This is all a lie!!! Click me</button>
+        </section>
+        <footer class="py-4 bg-dark text-light text-center">
+            <p>&copy; 2026 Umbrella Corporation Demo. This website is a <strong>personal project for learning purposes only</strong> and is not affiliated with or endorsed by any real company or media franchise.</p>
+            <div>
+                <a href="#" class="text-light me-2">Twitter</a>
+                <a href="#" class="text-light me-2">LinkedIn</a>
+                <a href="#" class="text-light">YouTube</a>
+            </div>
+        </footer>
+    </section> 
+    <section id="starsContent" class="hidden">
+
+
+
+    <!--This is the Stars content-->
+    <!--This is the navigation for the site-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="images/Umbrella-Emblem.png"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#incidents">Incidents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proof">Proof</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="container py-5">
+            <div class="row align-items-center g-4">
+                <!-- Text column -->
+                <div class="col-12 col-md-5 text-center text-md-start starsSlogan">
+                <h1 class="display-5">The Truth About Umbrella</h1>
+                <p class="lead">What they don’t want you to see is finally coming to light.</p>
+                </div>
+
+                <!-- Video column -->
+                <div class="col-12 col-md-7 d-flex justify-content-center">
+                <div class="ratio ratio-16x9 w-100" style="max-width: 750px;">
+                    <img src="images/stars logo">
+                </div>
+                </div>
+            </div>
+        </header>
+        <!--This is thhe main section of the website-->
+        <main class="services" id="incidents">
+            <h3 class="text-center mb-5">Incidents</h3>
+            <!--This is the card section, each one then has a modal associated-->
+            <div class="container">
+                <div class="row justify-content-center g-4">
+                    <!--Main Card-->
+                    <div class="tvirus card col-12 col-sm-6 col-md-5 m-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Spencer Mansion Incident - 1998</h3>
+                            <p>A routine investigation at a remote mansion turned into a nightmare when it was revealed to house secret experiments with a deadly virus, reanimating the dead and mutating creatures. Trapped inside, the team faced deadly traps, limited resources, and the consequences of unchecked scientific ambition.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#spencer">Learn More</button>
+                        </div>
+                        <!--Modal-->
+                        <div class="modal fade" id="spencer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Spencer Mansion</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The incident at the Spencer Mansion began as a routine investigation into a series of grisly murders on the outskirts of a remote mountain region, but quickly descended into a nightmare. Upon arrival, an elite police unit discovered the mansion was a front for secret biological experiments involving a highly contagious virus that reanimated the dead and mutated living organisms into violent creatures. Trapped inside, the team faced deadly traps, limited resources, and the constant threat of infection while uncovering evidence of corporate corruption and scientific recklessness. As the truth emerged, it became clear that the outbreak was no accident, but the result of deliberate experimentation that spiraled out of control, turning the mansion into a sealed laboratory of horror.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Main Card-->
+                    <div class="gvirus card col-12 col-sm-6 col-md-5 m-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Racoon City Incident - 1998</h3>
+                            <p>A catastrophic viral outbreak transformed a bustling city into chaos, as infected citizens became violent and uncontrollable. Emergency response efforts collapsed under the scale of the contagion, exposing the devastating consequences of corporate experimentation and biological weapons falling into the wrong hands.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#racoon">Learn More</button>
+                        </div>
+                        <!--Modal-->
+                        <div class="modal fade" id="racoon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Racoon City </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The Raccoon City incident began as a covert outbreak of a highly experimental virus, initially confined to secret laboratories but quickly spreading beyond control. Within days, the virus infected a significant portion of the population, turning ordinary citizens into violent, uncontrollable creatures while overwhelming local law enforcement and emergency services. The city descended into panic as communication networks failed and streets became battlegrounds, leaving survivors to navigate collapsing infrastructure, blocked escape routes, and unpredictable threats. Evidence later revealed that the outbreak was the result of corporate ambition and unethical experimentation, with deliberate attempts to cover up the disaster worsening the crisis. What started as an isolated containment breach escalated into a full-scale urban nightmare, demonstrating the catastrophic potential of unchecked bioengineering and the fragility of societal order when faced with a viral epidemic.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="about py-5 bg-light" id="proof">
+            <div class="container">
+                <h2>Join the fight!</h2>
+                <p>We are taking this corrupt corporation down! But we need your help!</p>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <img src="images/stars.webp" class="img-fluid rounded" alt="Umbrella Research Lab">
+                    </div>
+                    <div class="col-md-6">
+                        <p>We are working to take down the Umbrella Corporation, exposing the deadly experiments and viral outbreaks they’ve caused. We’re recruiting anyone willing to fight for justice and survival, sharing critical intelligence, resources, and strategies to challenge a corporation that thrives on secrecy and human experimentation. Together, we can dismantle Umbrella from within and hold them accountable for the countless lives they’ve put at risk.</p>
+                        <ul>
+                            <li>Prevent further outbreaks</li>
+                            <li>Expose their crimes</li>
+                            <li>Protect innocent lives</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+        <button type="button" class="btn btn-danger mx-auto flashing-btn" id="umbrellaButton">Please don't listen to this</button>
+        </section>
+        <footer class="py-4 bg-dark text-light text-center">
+            <p>&copy; 2026 Umbrella Corporation Demo. This website is a <strong>personal project for learning purposes only</strong> and is not affiliated with or endorsed by any real company or media franchise.</p>
+            <div>
+                <a href="#" class="text-light me-2">Twitter</a>
+                <a href="#" class="text-light me-2">LinkedIn</a>
+                <a href="#" class="text-light">YouTube</a>
+            </div>
+        </footer>
     </section>
-    <footer class="py-4 bg-dark text-light text-center">
-        <p>&copy; 2026 Umbrella Corporation Demo. This website is a <strong>personal project for learning purposes only</strong> and is not affiliated with or endorsed by any real company or media franchise.</p>
-        <div>
-            <a href="#" class="text-light me-2">Twitter</a>
-            <a href="#" class="text-light me-2">LinkedIn</a>
-            <a href="#" class="text-light">YouTube</a>
-        </div>
-    </footer>
+    <script src="scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
