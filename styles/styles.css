@@ -1,0 +1,17 @@
+body {
+    font-family: "Orbitron", sans-serif;
+}
+
+.logo {
+    height: auto;
+    width:100px;
+}
+
+header {
+    height: 90vh;
+}
+
+.slogan {
+    text-align: center;
+    color:darkred;
+}
